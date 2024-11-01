@@ -1,0 +1,3 @@
+# SIMPLE_GITHUB_ACTIONS
+
+github_actionの備忘録

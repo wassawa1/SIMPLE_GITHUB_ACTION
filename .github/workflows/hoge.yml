@@ -1,0 +1,27 @@
+# このファイル全体をWorkflowという
+name: GitHub Actions Demo
+
+# trigger
+on: [push]
+
+jobs:
+  # 以下各jobの記述
+  echo_hello_world:
+    # 動作させるOSを指定
+    runs-on: ubuntu-latest
+    steps:
+      
+      # 以下の箇所が実行される。複数実行も可能
+      - name: "ステップ1"
+        run: echo "hello world!!"
+
+      # 以下の箇所が実行される。複数実行も可能
+      - name: "ステップ2"
+        run: pwd
+        run: pwd
+      
+  echo_goodbye:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: "別れの挨拶をする"
+        run: echo "Good Bye!!"
