@@ -11,15 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       
-      # 以下の箇所が実行される。複数実行も可能
+      # 以下の箇所が実行される。
       - name: "ステップ1"
         run: echo "hello world!!"
 
-      # 以下の箇所が実行される。複数実行も可能
+      # 以下の箇所が実行される。複数実行も可能だが原因の特定に困るため1ステップに1処理が推奨される
       - name: "ステップ2"
-        run: pwd
-        run: pwd
-      
+        run: |
+          pwd
+          pwd
   echo_goodbye:
     runs-on: ubuntu-latest
     steps: 
